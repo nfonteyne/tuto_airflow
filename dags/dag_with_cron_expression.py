@@ -10,10 +10,10 @@ default_args = {
     'retry_delay':timedelta(minutes=5)
 }
 with DAG(
-    dag_id='dag_with_cron_expresion_v02',
+    dag_id='dag_with_cron_expresion_v03',
     default_args=default_args,
     start_date=datetime(2024, 8, 20),
-    schedule_interval='0 0 * * *',
+    schedule_interval='0 3 * * Tue-Fri',
 ) as dag:
     task1 = BashOperator(
         task_id='first_task',
