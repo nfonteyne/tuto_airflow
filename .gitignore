@@ -1,0 +1,21 @@
+# Airflow directories and files
+airflow.db
+logs/
+dags/__pycache__/
+plugins/__pycache__/
+
+# Python cache files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Environment files
+.env
+*.env
+py_env
+
+# Configurations with sensitive data
+airflow.cfg
+unittests.cfg
+webserver_config.py
