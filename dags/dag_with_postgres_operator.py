@@ -18,7 +18,7 @@ with DAG(
 ) as dag:
     task1 = PostgresOperator(
         task_id='create_postgres_table',
-        postgres_conn_id="postgres_localhost",
+        postgres_conn_id="postgres",
         sql="""
             create table if not exists dag_runs (
                 dt date,
